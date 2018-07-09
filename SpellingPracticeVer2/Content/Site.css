@@ -1,0 +1,59 @@
+﻿/*
+*
+* Common
+*
+*/
+* {
+  box-sizing: border-box;
+}
+
+.leftie {
+  float: left;
+}
+
+.rightie {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.bordered {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+/*
+*
+* Header
+*
+*/
+header {
+  padding-bottom: 1em;
+}
+
+.navbar {
+  display: flex;
+}
+
+h1 {
+  margin: auto;
+  color: white;
+}
+
+/*
+*
+* Main
+*
+*/
+main {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (min-width: 850px) {
+  main {
+    width: 850px;
+  }
+}
