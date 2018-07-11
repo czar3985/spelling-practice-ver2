@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpellingPracticeVer2.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,11 @@ namespace SpellingPracticeVer2.Controllers
         // GET: Setup
         public ActionResult Index()
         {
-            return View();
+            var model = new SpellingSet {
+                words = new List<string> { "exception", "thrown", "system"}
+            };
+
+            return View(model);
         }
     }
 }

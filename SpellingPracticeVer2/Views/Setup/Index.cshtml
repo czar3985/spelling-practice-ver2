@@ -17,9 +17,15 @@
 </p>
 <div class="bordered">
   <p>Spelling Words<br />Are you ready?</p>
-  {}
+  @{var index = 1;}
+  @foreach (var item in Model.words)
+  {
+    <p>Number @index. @item. @item.</p>
+    index++;
+  }
 </div>
 <br />
-<form method="POST">
+@using (Html.BeginForm())
+{
   <button type="submit" class="btn btn-primary" name="startTest">Start</button>
-</form>
+}
