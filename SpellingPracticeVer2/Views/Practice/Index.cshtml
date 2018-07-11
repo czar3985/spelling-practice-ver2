@@ -1,74 +1,86 @@
-﻿
+﻿@model SpellingPracticeVer2.Models.SpellingViewModel
 @{
   ViewBag.Title = "Index";
 }
 
-<form method="POST">
+@using (Html.BeginForm())
+{
   <p>Spell the words as they are read to you</p>
   <div class="form-group row">
-    <label for="answer1" class="col-sm-1 col-form-label">1.</label>
+    @Html.LabelFor(model => model.Answer1, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
     <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer1" name="answer1">
+      @Html.EditorFor(model => model.Answer1, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer1, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer2" class="col-sm-1 col-form-label">2.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer2" name="answer2">
+    @Html.LabelFor(model => model.Answer2, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer2, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer2, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer3" class="col-sm-1 col-form-label">3.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer3" name="answer3">
+    @Html.LabelFor(model => model.Answer3, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer3, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer3, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer4" class="col-sm-1 col-form-label">4.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer4" name="answer4">
+    @Html.LabelFor(model => model.Answer4, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer4, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer4, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer5" class="col-sm-1 col-form-label">5.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer5" name="answer5">
+    @Html.LabelFor(model => model.Answer5, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer5, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer5, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer6" class="col-sm-1 col-form-label">6.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer6" name="answer6">
+    @Html.LabelFor(model => model.Answer6, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer6, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer6, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer7" class="col-sm-1 col-form-label">7.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer7" name="answer7">
+    @Html.LabelFor(model => model.Answer7, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer7, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer7, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer8" class="col-sm-1 col-form-label">8.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer8" name="answer8">
+    @Html.LabelFor(model => model.Answer8, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer8, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer8, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer9" class="col-sm-1 col-form-label">9.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer9" name="answer9">
+    @Html.LabelFor(model => model.Answer9, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer9, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer9, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
-    <label for="answer10" class="col-sm-1 col-form-label">10.</label>
-    <div class="col-sm-11">
-      <input type="text" class="form-control" id="answer10" name="answer10">
+    @Html.LabelFor(model => model.Answer10, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
+    <div class="col-md-10">
+      @Html.EditorFor(model => model.Answer10, new { htmlAttributes = new { @class = "form-control" } })
+      @Html.ValidationMessageFor(model => model.Answer10, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary" name="submitAnswers">Submit</button>
+      <input type="submit" value="Submit" class="btn btn-default" />
     </div>
   </div>
-</form>
+}
+
 
