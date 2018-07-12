@@ -26,5 +26,10 @@ namespace SpellingPracticeVer2.Controllers
 
             return View();
         }
+
+        public ActionResult UsePrevious()
+        {
+            return RedirectToAction("Index", "Setup");
+        }
     }
 }
