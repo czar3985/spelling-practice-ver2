@@ -24,6 +24,10 @@
   padding: 1em;
 }
 
+.table > tbody > tr > td {
+  border: none;
+}
+
 /*
 *
 * Header

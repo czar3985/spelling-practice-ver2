@@ -9,6 +9,7 @@ namespace SpellingPracticeVer2.Models
     public class SpellingSet
     {
         public List<string> words { get; set; }
+        public List<string> answers { get; set; }
     }
 
     public class SpellingViewModel

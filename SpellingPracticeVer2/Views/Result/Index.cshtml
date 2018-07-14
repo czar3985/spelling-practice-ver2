@@ -1,5 +1,4 @@
 ﻿@model SpellingPracticeVer2.Models.SpellingSet
-
 @{
   ViewBag.Title = "Index";
 }
@@ -7,19 +6,21 @@
 <h2>Results:</h2>
 
 <table class="table">
-  @*<tr>
-    <th></th>
-  </tr>
-
-  @foreach (var item in Model)
+  @for (int i = 1; i <= 10; i++)
   {
     <tr>
-      <td>
-        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-      </td>
+      <td>@i.</td>
+      <td>@Model.answers[i-1]</td>
+      @if (Model.answers[i-1] == Model.words[i-1])
+      {
+        <td><strong>Correct.</strong></td>
+      }
+      else
+      {
+        <td><strong>Incorrect.</strong></td>
+        <td>The correct answer is "@Model.words[i - 1]".</td>
+      }
     </tr>
-  }*@
-
+  }
 </table>
+<a class="btn btn-primary" href="/Home">Back to Home</a>

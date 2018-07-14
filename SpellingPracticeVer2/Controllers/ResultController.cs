@@ -1,7 +1,6 @@
-﻿using System;
+﻿using SpellingPracticeVer2.Models;
+using SpellingPracticeVer2.Services;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace SpellingPracticeVer2.Controllers
@@ -11,7 +10,15 @@ namespace SpellingPracticeVer2.Controllers
         // GET: Result
         public ActionResult Index()
         {
-            return View();
+            var listService = new ListService();
+
+            var model = new SpellingSet
+            {
+                words = listService.GetWords(),
+                answers = (List<string>)TempData["answerList"]
+            };
+
+            return View(model);
         }
     }
 }
