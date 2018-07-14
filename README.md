@@ -22,10 +22,4 @@ of the practice test is displayed
 
 ## To Do
 
-**CODING IS CURRENTLY ONGOING**
-
 Use HTML5 API SpeechSynthesis instead of a third-party website.
-
-## License
-
-Spelling Practice Ver2 is released under the [MIT License](https://opensource.org/licenses/MIT).
