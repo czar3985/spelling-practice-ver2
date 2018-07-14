@@ -15,27 +15,8 @@ namespace SpellingPracticeVer2.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-        public ActionResult UsePrevious()
-        {
-            return RedirectToAction("Index", "Setup");
-        }
-
         [HttpPost]
-        public ActionResult NewWords(SpellingViewModel model)
+        public ActionResult Index(SpellingViewModel model)
         {
             // Update words file
             string path = Server.MapPath(@"~/App_Data/words.txt");

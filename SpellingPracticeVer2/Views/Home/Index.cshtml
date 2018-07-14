@@ -3,16 +3,11 @@
   ViewBag.Title = "Home Page";
 }
 
-
-@using (Html.BeginForm("UsePrevious", "Home", FormMethod.Post, new { }))
-{
-  <p class="leftie">Use saved words from last session?</p>
-  <input class="rightie btn btn-primary" type="submit" name="UsePrevious" value="Yes">
-}
-
+<p class="leftie">Use saved words from last session?</p>
+<a class="rightie btn btn-primary" href="/Setup">Yes</a>
 <p class="clearfix">OR</p>
 
-@using (Html.BeginForm("NewWords", "Home", FormMethod.Post, new { }))
+@using (Html.BeginForm())
 {
   <p>Enter new words for practice</p>
 

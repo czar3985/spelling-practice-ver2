@@ -18,10 +18,5 @@ namespace SpellingPracticeVer2.Controllers
 
             return View(model);
         }
-
-        public ActionResult StartTest()
-        {
-            return RedirectToAction("Index", "Practice");
-        }
     }
 }
