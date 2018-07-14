@@ -13,8 +13,6 @@ namespace SpellingPracticeVer2.Models
 
     public class SpellingViewModel
     {
-        public bool UsePrevious { get; set; }
-
         [Required]
         [Display(Name = "1.")]
         public string Word1 { get; set; }
