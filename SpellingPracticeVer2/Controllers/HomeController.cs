@@ -33,8 +33,8 @@ namespace SpellingPracticeVer2.Controllers
                         .AppendLine(model.Word9)
                         .AppendLine(model.Word10);
 
-            // Trim the last newline at the end of the file
-            fileContent.Length--;
+            // Trim the last newline and carriage return at the end of the file
+            fileContent.Length-=2;
 
             System.IO.File.WriteAllText(path, fileContent.ToString());
 
