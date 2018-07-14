@@ -1,8 +1,5 @@
 ﻿using SpellingPracticeVer2.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using SpellingPracticeVer2.Services;
 using System.Web.Mvc;
 
 namespace SpellingPracticeVer2.Controllers
@@ -12,18 +9,12 @@ namespace SpellingPracticeVer2.Controllers
         // GET: Setup
         public ActionResult Index()
         {
+            var listService = new ListService();
+
             // Get the words from a text file
-            string path = Server.MapPath(@"~/App_Data/words.txt");
-            var fileContent = System.IO.File.ReadAllText(path);
-
             var model = new SpellingSet {
-                words = new List<string> {}
+                words = listService.GetWords()
             };
-
-            model.words = fileContent.Split(
-                new[] { Environment.NewLine },
-                StringSplitOptions.None
-            ).ToList();
 
             return View(model);
         }
