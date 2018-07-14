@@ -52,6 +52,9 @@ namespace SpellingPracticeVer2.Controllers
                         .AppendLine(model.Word9)
                         .AppendLine(model.Word10);
 
+            // Trim the last newline at the end of the file
+            fileContent.Length--;
+
             System.IO.File.WriteAllText(path, fileContent.ToString());
 
             return RedirectToAction("Index", "Setup");
