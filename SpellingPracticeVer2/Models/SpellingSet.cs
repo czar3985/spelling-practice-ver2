@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SpellingPracticeVer2.Models
 {
-    public class SpellingSet
+    public class DataViewModel
     {
         public List<string> words { get; set; }
         public List<string> answers { get; set; }

@@ -12,7 +12,7 @@ namespace SpellingPracticeVer2.Controllers
             var listService = new ListService();
 
             // Get the words from a text file
-            var model = new SpellingSet {
+            var model = new DataViewModel {
                 words = listService.GetWords()
             };
 

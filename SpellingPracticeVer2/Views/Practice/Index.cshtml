@@ -8,79 +8,109 @@
   <p>Spell the words as they are read to you</p>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer1, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word1 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer1, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer1, "", new { @class = "text-danger" })
     </div>
-  </div>
+   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer2, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word2 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer2, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer2, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer3, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word3 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer3, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer3, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer4, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word4 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer4, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer4, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer5, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word5 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer5, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer5, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer6, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word6 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer6, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer6, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer7, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word7 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer7, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer7, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer8, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word8 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer8, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer8, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer9, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word9 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer9, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer9, "", new { @class = "text-danger" })
     </div>
   </div>
   <div class="form-group row">
     @Html.LabelFor(model => model.Answer10, htmlAttributes: new { @class = "col-sm-1 col-form-label" })
-    <div class="col-md-10">
+    <div class="col-md-1">
+      <input type="button" value="Play" class="btn play-button" data-speech = @Model.Word10 />
+    </div>
+    <div class="col-md-8">
       @Html.EditorFor(model => model.Answer10, new { htmlAttributes = new { @class = "form-control" } })
       @Html.ValidationMessageFor(model => model.Answer10, "", new { @class = "text-danger" })
     </div>
   </div>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <input type="submit" value="Submit" class="btn btn-default" />
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="submit" value="Submit" class="btn btn-default" />
+      </div>
     </div>
-  </div>
-}
+    }
 
 

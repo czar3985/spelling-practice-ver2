@@ -12,7 +12,7 @@ namespace SpellingPracticeVer2.Controllers
         {
             var listService = new ListService();
 
-            var model = new SpellingSet
+            var model = new DataViewModel
             {
                 words = listService.GetWords(),
                 answers = (List<string>)TempData["answerList"]

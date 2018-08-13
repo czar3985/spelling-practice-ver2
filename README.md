@@ -8,18 +8,12 @@ The spelling practice application helps kids learn and practice
 spelling up to 10 vocabulary words at a time.
 
 The user inputs the spelling words or chooses the words saved from the 
-last session. The website then helps set up the text to be read
-by an [online text-to-speech application](https://www.text2speech.org/).
-The user inputs the answers to the Spelling Practice webpage and results
-of the practice test is displayed
+last session. It makes use of HTML5 SpeechSynthesis API for reading the words 
+for the user to spell.
 
-![Spelling Practice website](./screenshots.jpg?raw=true "Title")
+[Website](http://spellingteacher.azurewebsites.net/)
 
 ## Prerequisites
 
 1. Microsoft Visual Studio 2017
 2. Code from github repository [spelling-practice-ver2](https://github.com/czar3985/spelling-practice-ver2).
-
-## To Do
-
-Use HTML5 API SpeechSynthesis instead of a third-party website.
